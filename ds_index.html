@@ -6,7 +6,7 @@
   <title>DanSebo Global Services Ltd | Your Vision, Our Expertise</title>
   <meta name="description" content="DanSebo Global Services Ltd — Nigerian IT solutions, digital services, professional printing & branding, entrepreneurial development training, and general consultancy. Based in Kaduna, Nigeria.">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
   <style>
     /* ═══════════════════════════════════
        RESET & VARIABLES
@@ -14,7 +14,7 @@
     :root {
       --navy:#0f1e3d; --navy2:#1a2f5a; --navy3:#080f1f;
       --orange:#e8651a; --orange2:#f07d38; --orange3:#c4520d;
-      --white:#fff; --off:#f4f6fa; --muted:rgba(255,255,255,0.55);
+      --white:#fff; --off:#f4f6fa; --muted:rgba(255,255,255,0.85);
       --border:rgba(255,255,255,0.08); --card:rgba(255,255,255,0.04);
     }
     *,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
@@ -33,10 +33,10 @@
     .logo-wrap{display:flex;align-items:center;gap:10px;text-decoration:none;}
     .logo-img{height:40px;border-radius:8px;object-fit:contain;}
     .logo-icon{width:42px;height:42px;background:var(--orange);border-radius:10px;display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-weight:800;font-size:16px;color:#fff;flex-shrink:0;}
-    .logo-name{font-family:'Syne',sans-serif;font-weight:800;font-size:14px;color:#fff;line-height:1;}
-    .logo-sub{font-size:9px;color:var(--orange);letter-spacing:1.5px;text-transform:uppercase;margin-top:2px;}
+    .logo-name{font-family:'Syne',sans-serif;font-weight:700;font-size:15px;color:#fff;line-height:1;letter-spacing:0.5px;}
+    .logo-sub{font-size:9px;color:var(--orange);letter-spacing:2px;text-transform:uppercase;margin-top:3px;font-weight:500;}
     .main-nav{display:flex;align-items:center;gap:4px;}
-    .main-nav a{color:rgba(255,255,255,0.65);text-decoration:none;font-size:13px;font-weight:500;padding:8px 12px;border-radius:8px;transition:0.2s;}
+    .main-nav a{color:rgba(255,255,255,0.85);text-decoration:none;font-size:13px;font-weight:500;padding:8px 12px;border-radius:8px;transition:0.2s;}
     .main-nav a:hover,.main-nav a.active{color:var(--orange);}
     .header-cta{display:flex;align-items:center;gap:8px;}
     .btn-outline{padding:8px 16px;border:1px solid rgba(255,255,255,0.2);border-radius:8px;color:rgba(255,255,255,0.6);font-size:12px;font-weight:500;text-decoration:none;transition:0.2s;background:transparent;}
@@ -54,9 +54,9 @@
     .hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(232,101,26,0.12);border:1px solid rgba(232,101,26,0.25);padding:6px 14px;border-radius:40px;font-size:12px;color:var(--orange2);font-weight:500;margin-bottom:20px;}
     .hero-badge::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--orange);animation:blink 1.5s infinite;}
     @keyframes blink{0%,100%{opacity:1}50%{opacity:0.3}}
-    .hero h1{font-family:'Syne',sans-serif;font-weight:800;font-size:clamp(2rem,4.5vw,3.5rem);line-height:1.1;margin-bottom:18px;}
+    .hero h1{font-family:'Syne',sans-serif;font-weight:700;font-size:clamp(1.9rem,4vw,3.2rem);line-height:1.2;margin-bottom:18px;letter-spacing:-0.5px;}
     .hero h1 span{color:var(--orange);}
-    .hero p{font-size:15px;color:var(--muted);line-height:1.7;margin-bottom:32px;max-width:480px;}
+    .hero p{font-size:15px;color:rgba(255,255,255,0.85);line-height:1.7;margin-bottom:32px;max-width:480px;}
     .hero-btns{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:44px;}
     .btn-hero-primary{padding:13px 26px;background:var(--orange);border:none;border-radius:10px;color:#fff;font-size:14px;font-weight:600;text-decoration:none;transition:0.25s;display:inline-flex;align-items:center;gap:8px;}
     .btn-hero-primary:hover{background:var(--orange3);transform:translateY(-2px);}
@@ -64,14 +64,14 @@
     .btn-hero-secondary:hover{border-color:var(--orange);color:var(--orange);}
     .hero-stats{display:flex;gap:28px;flex-wrap:wrap;}
     .hero-stat .num{font-family:'Syne',sans-serif;font-size:1.8rem;font-weight:800;color:var(--orange);}
-    .hero-stat .label{font-size:11px;color:rgba(255,255,255,0.4);margin-top:2px;}
+    .hero-stat .label{font-size:11px;color:rgba(255,255,255,0.7);margin-top:2px;}
     .hero-visual{position:relative;}
     .hero-card-main{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:22px;padding:28px;backdrop-filter:blur(20px);}
     .hero-card-main .card-tag{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--orange);font-weight:600;margin-bottom:14px;}
-    .hero-card-main h3{font-family:'Syne',sans-serif;font-size:1.15rem;font-weight:700;margin-bottom:10px;}
-    .hero-card-main p{font-size:13px;color:rgba(255,255,255,0.55);line-height:1.6;margin-bottom:18px;}
+    .hero-card-main h3{font-family:'Syne',sans-serif;font-size:1.1rem;font-weight:600;margin-bottom:10px;letter-spacing:0.2px;line-height:1.4;}
+    .hero-card-main p{font-size:13px;color:rgba(255,255,255,0.85);line-height:1.6;margin-bottom:18px;}
     .service-list{display:flex;flex-direction:column;gap:8px;}
-    .service-item{display:flex;align-items:center;gap:10px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:10px;border:1px solid rgba(255,255,255,0.06);font-size:13px;transition:0.2s;}
+    .service-item{display:flex;align-items:center;gap:10px;padding:10px 14px;background:rgba(255,255,255,0.06);border-radius:10px;border:1px solid rgba(255,255,255,0.1);font-size:13px;color:rgba(255,255,255,0.9);transition:0.2s;}
     .service-item:hover{border-color:rgba(232,101,26,0.3);}
     .service-item i{color:var(--orange);width:16px;}
 
@@ -80,9 +80,9 @@
     ═══════════════════════════════════ */
     section{padding:80px 0;}
     .section-tag{display:inline-block;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--orange);font-weight:600;margin-bottom:10px;}
-    .section-title{font-family:'Syne',sans-serif;font-weight:800;font-size:clamp(1.6rem,3vw,2.4rem);line-height:1.2;margin-bottom:14px;}
-    .section-title span{color:var(--orange);}
-    .section-desc{font-size:15px;color:var(--muted);line-height:1.7;max-width:560px;}
+    .section-title{font-family:'Syne',sans-serif;font-weight:700;font-size:clamp(1.5rem,2.8vw,2.2rem);line-height:1.3;margin-bottom:14px;letter-spacing:-0.3px;}
+    .section-title span{color:var(--orange);font-weight:700;}
+    .section-desc{font-size:15px;color:rgba(255,255,255,0.8);line-height:1.7;max-width:560px;}
     .section-header{margin-bottom:48px;}
     .section-header.centered{text-align:center;}
     .section-header.centered .section-desc{margin:0 auto;}
@@ -92,16 +92,16 @@
     ═══════════════════════════════════ */
     #services{background:rgba(255,255,255,0.02);}
     .services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;}
-    .service-card{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);border-radius:18px;padding:26px;transition:0.3s;position:relative;overflow:hidden;}
+    .service-card{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.12);border-radius:18px;padding:26px;transition:0.3s;position:relative;overflow:hidden;}
     .service-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--orange);transform:scaleX(0);transition:0.3s;transform-origin:left;}
     .service-card:hover{border-color:rgba(232,101,26,0.2);transform:translateY(-3px);}
     .service-card:hover::before{transform:scaleX(1);}
     .service-icon{width:50px;height:50px;background:rgba(232,101,26,0.1);border-radius:13px;display:flex;align-items:center;justify-content:center;margin-bottom:18px;font-size:20px;color:var(--orange);transition:0.3s;}
     .service-card:hover .service-icon{background:var(--orange);color:#fff;}
-    .service-card h3{font-family:'Syne',sans-serif;font-size:15px;font-weight:700;margin-bottom:8px;}
-    .service-card p{font-size:13px;color:rgba(255,255,255,0.5);line-height:1.6;margin-bottom:14px;}
+    .service-card h3{font-family:'Syne',sans-serif;font-size:15px;font-weight:600;margin-bottom:8px;letter-spacing:0.2px;line-height:1.3;}
+    .service-card p{font-size:13px;color:rgba(255,255,255,0.8);line-height:1.6;margin-bottom:14px;}
     .service-card ul{list-style:none;display:flex;flex-direction:column;gap:5px;}
-    .service-card ul li{font-size:12px;color:rgba(255,255,255,0.4);display:flex;align-items:center;gap:7px;}
+    .service-card ul li{font-size:12px;color:rgba(255,255,255,0.75);display:flex;align-items:center;gap:7px;}
     .service-card ul li::before{content:'→';color:var(--orange);font-size:10px;}
 
     /* ═══════════════════════════════════
@@ -111,33 +111,33 @@
     .about-img-main{background:linear-gradient(135deg,var(--navy2),var(--navy));border:1px solid var(--border);border-radius:22px;padding:36px;text-align:center;position:relative;overflow:hidden;margin-bottom:20px;}
     .about-img-main::after{content:'';position:absolute;top:0;right:0;bottom:0;left:0;background:linear-gradient(135deg,rgba(232,101,26,0.06),transparent);}
     .about-icon-big{font-size:4rem;margin-bottom:14px;display:block;}
-    .about-img-main h3{font-family:'Syne',sans-serif;font-size:1.2rem;font-weight:800;margin-bottom:6px;}
-    .about-img-main p{font-size:12px;color:rgba(255,255,255,0.45);}
+    .about-img-main h3{font-family:'Syne',sans-serif;font-size:1.1rem;font-weight:700;margin-bottom:6px;letter-spacing:0.2px;}
+    .about-img-main p{font-size:12px;color:rgba(255,255,255,0.75);}
     .about-badge-rc{display:inline-block;background:var(--orange);padding:8px 16px;border-radius:10px;font-size:11px;font-weight:700;letter-spacing:1px;margin-bottom:16px;}
     .about-stats-mini{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
     .mini-stat{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.06);border-radius:13px;padding:14px;text-align:center;}
     .mini-stat .n{font-family:'Syne',sans-serif;font-size:1.4rem;font-weight:800;color:var(--orange);}
-    .mini-stat .l{font-size:11px;color:rgba(255,255,255,0.35);margin-top:2px;}
-    .about-content p{font-size:14px;color:rgba(255,255,255,0.6);line-height:1.8;margin-bottom:14px;}
+    .mini-stat .l{font-size:11px;color:rgba(255,255,255,0.7);margin-top:2px;}
+    .about-content p{font-size:14px;color:rgba(255,255,255,0.85);line-height:1.8;margin-bottom:14px;}
     .values-list{display:flex;flex-direction:column;gap:10px;margin:24px 0;}
     .value-item{display:flex;align-items:flex-start;gap:13px;padding:13px 16px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:12px;}
     .value-item i{color:var(--orange);font-size:15px;margin-top:2px;flex-shrink:0;}
     .value-item strong{font-size:13px;font-weight:600;display:block;margin-bottom:2px;}
-    .value-item span{font-size:12px;color:rgba(255,255,255,0.4);}
+    .value-item span{font-size:12px;color:rgba(255,255,255,0.75);}
 
     /* ═══════════════════════════════════
        TEAM
     ═══════════════════════════════════ */
     #team{background:rgba(255,255,255,0.02);}
     .team-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:20px;}
-    .team-card{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:18px;padding:26px 18px;text-align:center;transition:0.3s;}
+    .team-card{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);border-radius:18px;padding:26px 18px;text-align:center;transition:0.3s;}
     .team-card:hover{border-color:rgba(232,101,26,0.3);transform:translateY(-4px);box-shadow:0 16px 40px rgba(0,0,0,0.3);}
     .team-avatar{width:76px;height:76px;border-radius:50%;background:linear-gradient(135deg,var(--navy2),var(--orange));display:flex;align-items:center;justify-content:center;margin:0 auto 14px;font-family:'Syne',sans-serif;font-size:26px;font-weight:800;color:#fff;border:3px solid rgba(232,101,26,0.25);overflow:hidden;flex-shrink:0;}
     .team-avatar img{width:100%;height:100%;object-fit:cover;border-radius:50%;}
     .team-card.ceo .team-avatar{width:88px;height:88px;font-size:30px;background:var(--orange);border-color:rgba(255,255,255,0.2);}
-    .team-card h3{font-family:'Syne',sans-serif;font-size:13px;font-weight:700;margin-bottom:4px;line-height:1.3;}
+    .team-card h3{font-family:'Syne',sans-serif;font-size:13px;font-weight:600;margin-bottom:4px;line-height:1.4;letter-spacing:0.2px;}
     .team-card .role{font-size:11px;color:var(--orange);font-weight:600;letter-spacing:0.5px;margin-bottom:4px;}
-    .team-card .dept{font-size:11px;color:rgba(255,255,255,0.3);}
+    .team-card .dept{font-size:11px;color:rgba(255,255,255,0.65);}
     .empty-state{grid-column:1/-1;text-align:center;padding:48px;color:rgba(255,255,255,0.25);font-size:14px;}
     .empty-state i{font-size:2.5rem;display:block;margin-bottom:12px;color:rgba(255,255,255,0.15);}
 
@@ -151,7 +151,7 @@
     .gallery-item:hover{border-color:rgba(232,101,26,0.3);}
     .gallery-placeholder{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;color:rgba(255,255,255,0.2);}
     .gallery-placeholder i{font-size:2rem;}
-    .gallery-overlay{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(0,0,0,0.85));padding:20px 14px 14px;transform:translateY(100%);transition:0.3s;}
+    .gallery-overlay{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(0,0,0,0.92));padding:20px 14px 14px;transform:translateY(0);transition:0.3s;}
     .gallery-item:hover .gallery-overlay{transform:translateY(0);}
     .gallery-overlay span{font-size:12px;font-weight:500;}
     .gallery-cat{font-size:10px;color:var(--orange);letter-spacing:1px;text-transform:uppercase;display:block;margin-bottom:3px;}
@@ -161,14 +161,14 @@
     ═══════════════════════════════════ */
     #reviews{background:rgba(255,255,255,0.02);}
     .reviews-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px;margin-bottom:36px;}
-    .review-card{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:18px;padding:22px;transition:0.3s;}
+    .review-card{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);border-radius:18px;padding:22px;transition:0.3s;}
     .review-card:hover{border-color:rgba(232,101,26,0.2);}
     .review-stars{color:var(--orange);font-size:13px;margin-bottom:10px;letter-spacing:2px;}
-    .review-text{font-size:13px;color:rgba(255,255,255,0.6);line-height:1.7;margin-bottom:14px;font-style:italic;}
+    .review-text{font-size:13px;color:rgba(255,255,255,0.85);line-height:1.7;margin-bottom:14px;font-style:italic;}
     .review-author{display:flex;align-items:center;gap:10px;}
     .review-avatar{width:36px;height:36px;border-radius:50%;background:var(--orange);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;font-family:'Syne',sans-serif;flex-shrink:0;}
     .review-name{font-size:13px;font-weight:600;}
-    .review-date{font-size:11px;color:rgba(255,255,255,0.3);}
+    .review-date{font-size:11px;color:rgba(255,255,255,0.6);}
     .add-review{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);border-radius:18px;padding:26px;max-width:600px;margin:0 auto;}
     .add-review h4{font-family:'Syne',sans-serif;font-size:1rem;font-weight:700;margin-bottom:16px;}
     .review-inputs{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px;}
@@ -187,20 +187,20 @@
     .contact-item{display:flex;align-items:flex-start;gap:14px;padding:18px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);border-radius:14px;transition:0.2s;}
     .contact-item:hover{border-color:rgba(232,101,26,0.2);}
     .contact-item-icon{width:42px;height:42px;background:rgba(232,101,26,0.1);border-radius:11px;display:flex;align-items:center;justify-content:center;color:var(--orange);font-size:16px;flex-shrink:0;}
-    .contact-item h4{font-size:11px;color:rgba(255,255,255,0.35);letter-spacing:1px;text-transform:uppercase;margin-bottom:3px;}
-    .contact-item p,.contact-item a{font-size:13px;color:#fff;text-decoration:none;line-height:1.5;}
+    .contact-item h4{font-size:11px;color:rgba(255,255,255,0.65);letter-spacing:1px;text-transform:uppercase;margin-bottom:3px;}
+    .contact-item p,.contact-item a{font-size:14px;color:#fff;text-decoration:none;line-height:1.5;}
     .contact-item a:hover{color:var(--orange);}
     .social-links-block{margin-top:4px;}
-    .social-links-block h4{font-size:11px;color:rgba(255,255,255,0.35);letter-spacing:1px;text-transform:uppercase;margin-bottom:14px;}
+    .social-links-block h4{font-size:11px;color:rgba(255,255,255,0.65);letter-spacing:1px;text-transform:uppercase;margin-bottom:14px;}
     .social-row{display:flex;gap:10px;flex-wrap:wrap;}
     .social-btn{width:42px;height:42px;border-radius:11px;display:flex;align-items:center;justify-content:center;font-size:16px;color:#fff;text-decoration:none;transition:0.25s;border:1px solid rgba(255,255,255,0.1);}
     .social-btn:hover{transform:translateY(-3px);border-color:transparent;}
     .social-btn.fb{background:#1877F2;}.social-btn.ig{background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);}
     .social-btn.tt{background:#010101;}.social-btn.wa{background:#25D366;}
     .contact-form{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);border-radius:22px;padding:28px;}
-    .contact-form h3{font-family:'Syne',sans-serif;font-size:1.1rem;font-weight:700;margin-bottom:20px;}
+    .contact-form h3{font-family:'Syne',sans-serif;font-size:1.1rem;font-weight:600;margin-bottom:20px;letter-spacing:0.2px;}
     .form-group{margin-bottom:14px;}
-    .form-group label{font-size:11px;color:rgba(255,255,255,0.45);letter-spacing:0.5px;display:block;margin-bottom:5px;}
+    .form-group label{font-size:11px;color:rgba(255,255,255,0.75);letter-spacing:0.5px;display:block;margin-bottom:5px;}
     .form-group input,.form-group textarea,.form-group select{width:100%;padding:11px 14px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:10px;color:#fff;font-family:'DM Sans',sans-serif;font-size:13px;outline:none;transition:0.2s;resize:vertical;}
     .form-group input:focus,.form-group textarea:focus,.form-group select:focus{border-color:var(--orange);}
     .form-group textarea{min-height:90px;}
@@ -211,15 +211,15 @@
     ═══════════════════════════════════ */
     .site-footer{background:var(--navy3);border-top:1px solid rgba(255,255,255,0.06);padding:56px 0 0;}
     .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,0.06);}
-    .footer-brand p{font-size:13px;color:rgba(255,255,255,0.35);line-height:1.7;max-width:250px;margin:14px 0 20px;}
+    .footer-brand p{font-size:13px;color:rgba(255,255,255,0.7);line-height:1.7;max-width:250px;margin:14px 0 20px;}
     .footer-social{display:flex;gap:8px;flex-wrap:wrap;}
     .footer-social-icon{width:34px;height:34px;border-radius:9px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.45);font-size:13px;text-decoration:none;transition:0.2s;}
     .footer-social-icon:hover{background:var(--orange);color:#fff;border-color:var(--orange);}
-    .footer-col h5{font-family:'Syne',sans-serif;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:16px;}
-    .footer-col a{display:flex;align-items:center;gap:6px;color:rgba(255,255,255,0.35);font-size:13px;text-decoration:none;margin-bottom:9px;transition:0.2s;}
+    .footer-col h5{font-family:'Syne',sans-serif;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,0.75);margin-bottom:16px;}
+    .footer-col a{display:flex;align-items:center;gap:6px;color:rgba(255,255,255,0.7);font-size:13px;text-decoration:none;margin-bottom:9px;transition:0.2s;}
     .footer-col a:hover{color:var(--orange);}
     .footer-bottom{padding:18px 0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;}
-    .footer-bottom p{font-size:12px;color:rgba(255,255,255,0.2);}
+    .footer-bottom p{font-size:12px;color:rgba(255,255,255,0.55);}
     .footer-bottom span{color:var(--orange);}
 
     /* ═══════════════════════════════════
@@ -233,6 +233,40 @@
     .back-to-top:hover{background:var(--orange);border-color:var(--orange);}
 
     /* ═══════════════════════════════════
+       CEO BIO CARD
+    ═══════════════════════════════════ */
+    .ceo-bio-card{display:flex;gap:32px;align-items:flex-start;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:20px;padding:32px;margin-bottom:40px;}
+    .ceo-bio-avatar{width:100px;height:100px;border-radius:50%;background:var(--orange);display:flex;align-items:center;justify-content:center;font-family:"Syne",sans-serif;font-size:28px;font-weight:800;color:#fff;flex-shrink:0;overflow:hidden;border:3px solid rgba(232,101,26,0.3);}
+    .ceo-bio-avatar img{width:100%;height:100%;object-fit:cover;border-radius:50%;}
+    .ceo-bio-tag{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--orange);font-weight:600;margin-bottom:6px;}
+    .ceo-bio-name{font-family:"Syne",sans-serif;font-size:1.3rem;font-weight:700;margin-bottom:12px;letter-spacing:0.2px;}
+    .ceo-bio-text{font-size:13px;color:rgba(255,255,255,0.85);line-height:1.7;margin-bottom:10px;}
+    .ceo-bio-badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px;}
+    .ceo-bio-badges span{display:inline-flex;align-items:center;gap:6px;font-size:11px;padding:5px 12px;background:rgba(232,101,26,0.1);border:1px solid rgba(232,101,26,0.2);border-radius:20px;color:var(--orange2);}
+
+    /* ═══════════════════════════════════
+       CERTIFICATIONS
+    ═══════════════════════════════════ */
+    .certs-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;}
+    .cert-card{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);border-radius:18px;padding:26px;text-align:center;transition:0.3s;}
+    .cert-card:hover{border-color:rgba(232,101,26,0.3);transform:translateY(-3px);}
+    .cert-icon{width:56px;height:56px;background:rgba(232,101,26,0.1);border-radius:14px;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-size:22px;color:var(--orange);}
+    .cert-card h4{font-family:"Syne",sans-serif;font-size:14px;font-weight:600;margin-bottom:8px;letter-spacing:0.2px;}
+    .cert-card p{font-size:12px;color:rgba(255,255,255,0.8);line-height:1.6;margin-bottom:12px;}
+    .cert-num{font-size:11px;font-weight:700;color:var(--orange);letter-spacing:1px;background:rgba(232,101,26,0.08);padding:4px 12px;border-radius:20px;display:inline-block;}
+
+    /* ═══════════════════════════════════
+       COLLABORATION
+    ═══════════════════════════════════ */
+    .collab-card{display:flex;gap:24px;align-items:flex-start;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);border-radius:20px;padding:28px;}
+    .collab-icon{width:56px;height:56px;background:var(--orange);border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:22px;color:#fff;flex-shrink:0;}
+    .collab-content h4{font-family:"Syne",sans-serif;font-size:1rem;font-weight:600;margin-bottom:10px;letter-spacing:0.2px;}
+    .collab-content p{font-size:13px;color:rgba(255,255,255,0.85);line-height:1.7;margin-bottom:14px;}
+    .collab-tags{display:flex;flex-wrap:wrap;gap:8px;}
+    .collab-tags span{font-size:11px;padding:4px 12px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);border-radius:20px;color:rgba(255,255,255,0.8);display:inline-flex;align-items:center;gap:6px;}
+    .collab-tags span i{color:var(--orange);}
+
+    /* ═══════════════════════════════════
        ANIMATIONS
     ═══════════════════════════════════ */
     .fade-in{opacity:0;transform:translateY(20px);transition:opacity 0.6s ease,transform 0.6s ease;}
@@ -242,6 +276,9 @@
        RESPONSIVE
     ═══════════════════════════════════ */
     @media(max-width:900px){
+      .ceo-bio-card{flex-direction:column;align-items:center;text-align:center;}
+      .ceo-bio-badges{justify-content:center;}
+      .collab-card{flex-direction:column;}
       .main-nav{display:none;position:fixed;top:70px;left:0;right:0;background:rgba(8,15,31,0.98);flex-direction:column;padding:16px;gap:4px;border-bottom:1px solid var(--border);z-index:999;}
       .main-nav.open{display:flex;}
       .hamburger{display:block;}
@@ -309,6 +346,7 @@
       <a href="#team">Team</a>
       <a href="#gallery">Gallery</a>
       <a href="#reviews">Reviews</a>
+      <a href="#certifications">Certifications</a>
       <a href="#contact">Contact</a>
     </nav>
     <div class="header-cta">
@@ -435,13 +473,16 @@
       <div class="about-content fade-in">
         <span class="section-tag">About Us</span>
         <h2 class="section-title">Innovation, Excellence &amp; <span>Dedication</span></h2>
-        <p>Dan Sebo Global Services Ltd is a Nigerian registered company established with a commitment to providing cutting-edge IT solutions, digital services, professional printing and branding, entrepreneurial development training, and general consultancy services.</p>
-        <p>Our company stands as a beacon of excellence, innovation, and dedication towards solving critical challenges and empowering businesses, organizations, and individuals through technology and professional services.</p>
-        <p>We stand as a trusted partner to governments, businesses, and NGOs in achieving digital and operational excellence.</p>
+        <p>DanSebo Global Services Ltd is a Nigerian registered company (RC: 84133837) established with a commitment to providing cutting-edge IT solutions, digital services, professional printing and branding, entrepreneurial development training, and general consultancy services.</p>
+        <p>As a full-service printing and digital company, we bring creativity, innovation, and precision to every project. We cater to individuals, businesses, religious institutions, NGOs, schools, and government bodies — combining modern technology with skilled craftsmanship to deliver reliable, top-quality results.</p>
+        <p>We stand as a trusted partner to governments, businesses, and NGOs in achieving digital and operational excellence across Africa and beyond.</p>
         <div class="values-list">
           <div class="value-item"><i class="fas fa-eye"></i><div><strong>Our Vision</strong><span>To be a globally recognized brand driving digital transformation, entrepreneurial development, and sustainable growth across Africa and beyond.</span></div></div>
           <div class="value-item"><i class="fas fa-bullseye"></i><div><strong>Our Mission</strong><span>Empowering individuals and organizations with innovative IT solutions, premium branding, and marketing services fostering entrepreneurship and skill development.</span></div></div>
-          <div class="value-item"><i class="fas fa-handshake"></i><div><strong>Why Choose Us</strong><span>Innovative ideas, reliable delivery, effective management, client-centered feedback, premium quality, and continuous support.</span></div></div>
+          <div class="value-item"><i class="fas fa-star"></i><div><strong>Excellence</strong><span>We deliver the highest standard in every project, ensuring quality that exceeds expectations.</span></div></div>
+          <div class="value-item"><i class="fas fa-lightbulb"></i><div><strong>Innovation</strong><span>We embrace creative thinking and modern technology to solve challenges in new ways.</span></div></div>
+          <div class="value-item"><i class="fas fa-shield-alt"></i><div><strong>Integrity</strong><span>We operate with honesty, transparency, and accountability in every engagement.</span></div></div>
+          <div class="value-item"><i class="fas fa-hands-helping"></i><div><strong>Empowerment</strong><span>We are committed to building capacity and creating opportunities for individuals and communities.</span></div></div>
         </div>
       </div>
     </div>
@@ -452,9 +493,25 @@
 <section id="team">
   <div class="container">
     <div class="section-header centered fade-in">
-      <span class="section-tag">Our People</span>
+      <span class="section-tag">Leadership Team</span>
       <h2 class="section-title">Meet Our <span>Creative Team</span></h2>
       <p class="section-desc">The passionate minds behind DanSebo's vision — Team Build Dreams.</p>
+    </div>
+    <!-- CEO BIO CARD -->
+    <div class="ceo-bio-card fade-in">
+      <div class="ceo-bio-avatar" id="ceoBioAvatar">AW</div>
+      <div class="ceo-bio-content">
+        <div class="ceo-bio-tag">Founder & CEO</div>
+        <h3 class="ceo-bio-name">Ahmad Ismail Waziri</h3>
+        <p class="ceo-bio-text">Ismail Ahmad Waziri is the Founder and Chief Executive Officer of Dan Sebo Global Services. A passionate entrepreneur, digital skills advocate, and community-driven leader committed to creating impact through innovation, education, and quality service delivery.</p>
+        <p class="ceo-bio-text">A graduate of Kaduna State University (B.Sc Education in Biology), he has attained several professional and digital skill certifications. With a strong background in digital services, printing solutions, and capacity building, he established DanSebo with a clear vision: to build a trusted brand that empowers individuals, supports businesses, and creates sustainable opportunities for growth.</p>
+        <div class="ceo-bio-badges">
+          <span><i class="fas fa-certificate"></i> CAC Registered</span>
+          <span><i class="fas fa-file-invoice"></i> SCUML Certified</span>
+          <span><i class="fas fa-award"></i> ISEYC Recognition Award</span>
+          <span><i class="fas fa-university"></i> Kaduna State University</span>
+        </div>
+      </div>
     </div>
     <div class="team-grid" id="teamGrid">
       <div class="empty-state"><i class="fas fa-spinner fa-spin"></i>Loading team...</div>
@@ -501,6 +558,61 @@
   </div>
 </section>
 
+<!-- CERTIFICATIONS -->
+<section id="certifications" style="background:rgba(255,255,255,0.02);">
+  <div class="container">
+    <div class="section-header centered fade-in">
+      <span class="section-tag">Credentials</span>
+      <h2 class="section-title">Our <span>Certifications</span></h2>
+      <p class="section-desc">Fully registered, certified, and recognized — DanSebo operates with complete legal and professional compliance.</p>
+    </div>
+    <div class="certs-grid fade-in">
+      <div class="cert-card">
+        <div class="cert-icon"><i class="fas fa-building"></i></div>
+        <h4>CAC Certificate</h4>
+        <p>Certificate of Incorporation — Federal Republic of Nigeria. Private Company Limited by Shares.</p>
+        <div class="cert-num">RC: 84133837</div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-icon"><i class="fas fa-shield-alt"></i></div>
+        <h4>SCUML Registration</h4>
+        <p>Special Control Unit Against Money Laundering — Duly registered under the Money Laundering Prevention Act, 2022.</p>
+        <div class="cert-num">RN/SC 191801275</div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-icon"><i class="fas fa-file-invoice-dollar"></i></div>
+        <h4>Tax Identification</h4>
+        <p>Certificate of Taxpayer Identification Number issued by the Joint Tax Board — Federal Inland Revenue Service.</p>
+        <div class="cert-num">TIN: 1086046867</div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-icon"><i class="fas fa-award"></i></div>
+        <h4>ISEYC Recognition</h4>
+        <p>Certificate of Recognition for Outstanding Commitment to Youth Empowerment and Community Development.</p>
+        <div class="cert-num">April 2024</div>
+      </div>
+    </div>
+    <!-- COLLABORATION -->
+    <div class="section-header centered fade-in" style="margin-top:64px;">
+      <span class="section-tag">Partnerships</span>
+      <h2 class="section-title">Collaboration <span>Projects</span></h2>
+      <p class="section-desc">Working with partners across Nigeria to empower communities through education and digital inclusion.</p>
+    </div>
+    <div class="collab-card fade-in">
+      <div class="collab-icon"><i class="fas fa-handshake"></i></div>
+      <div class="collab-content">
+        <h4>1st JAMB & Career Counseling Program</h4>
+        <p>Dan Sebo Global Services Ltd partnered with <strong>Pinnacle Hive</strong>, <strong>Khairukum Professional</strong>, and <strong>AIA Foundation</strong> to host the 1st JAMB and Career Counseling at Gashua Community, Yobe State, Nigeria — empowering hundreds of students with digital skills and career guidance.</p>
+        <div class="collab-tags">
+          <span><i class="fas fa-map-marker-alt"></i> Gashua, Yobe State</span>
+          <span><i class="fas fa-users"></i> Pinnacle Hive · Khairukum Professional · AIA Foundation</span>
+          <span><i class="fas fa-graduation-cap"></i> JAMB CBT Training</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- CONTACT -->
 <section id="contact">
   <div class="container">
@@ -517,7 +629,7 @@
         </div>
         <div class="contact-item">
           <div class="contact-item-icon"><i class="fab fa-whatsapp"></i></div>
-          <div><h4>WhatsApp / Phone</h4><a href="https://wa.me/2347068383802" target="_blank">+234 706 838 3802</a></div>
+          <div><h4>WhatsApp / Phone</h4><a href="https://wa.me/2347068383802" target="_blank">+234 706 838 3802</a><br><a href="tel:+2349078265699" style="color:rgba(255,255,255,0.6);font-size:12px;">+234 907 826 5699</a></div>
         </div>
         <div class="contact-item">
           <div class="contact-item-icon"><i class="fas fa-envelope"></i></div>
@@ -531,8 +643,8 @@
           <h4>Follow Us</h4>
           <div class="social-row">
             <a href="https://www.facebook.com/DANSEBO" target="_blank" class="social-btn fb"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://www.instagram.com/DANSEBO_" target="_blank" class="social-btn ig"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.tiktok.com/@DANSEBO_" target="_blank" class="social-btn tt"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.instagram.com/DANSEBO.NG" target="_blank" class="social-btn ig"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@DANSEBO" target="_blank" class="social-btn tt"><i class="fab fa-tiktok"></i></a>
             <a href="https://wa.me/2347068383802" target="_blank" class="social-btn wa"><i class="fab fa-whatsapp"></i></a>
           </div>
         </div>
@@ -573,15 +685,15 @@
         <p>Empowering businesses, organizations, and individuals through technology, branding, and professional services. Based in Kaduna, Nigeria.</p>
         <div class="footer-social">
           <a href="https://www.facebook.com/DANSEBO" target="_blank" class="footer-social-icon"><i class="fab fa-facebook-f"></i></a>
-          <a href="https://www.instagram.com/DANSEBO_" target="_blank" class="footer-social-icon"><i class="fab fa-instagram"></i></a>
-          <a href="https://www.tiktok.com/@DANSEBO_" target="_blank" class="footer-social-icon"><i class="fab fa-tiktok"></i></a>
+          <a href="https://www.instagram.com/DANSEBO.NG" target="_blank" class="footer-social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.tiktok.com/@DANSEBO" target="_blank" class="footer-social-icon"><i class="fab fa-tiktok"></i></a>
           <a href="https://wa.me/2347068383802" target="_blank" class="footer-social-icon"><i class="fab fa-whatsapp"></i></a>
         </div>
       </div>
       <div class="footer-col">
         <h5>Quick Links</h5>
         <a href="#home">Home</a><a href="#services">Services</a><a href="#about">About Us</a>
-        <a href="#team">Our Team</a><a href="#gallery">Gallery</a><a href="#reviews">Reviews</a><a href="#contact">Contact</a>
+        <a href="#team">Our Team</a><a href="#gallery">Gallery</a><a href="#reviews">Reviews</a><a href="#certifications">Certifications</a><a href="#contact">Contact</a>
       </div>
       <div class="footer-col">
         <h5>Services</h5>
@@ -729,6 +841,11 @@ function loadTeam() {
         ? '<img src="' + esc(m.image_url) + '" alt="' + esc(m.name) + '">'
         : initials;
       var isCeo = (m.role || '').toLowerCase().indexOf('ceo') > -1 || (m.role || '').toLowerCase().indexOf('founder') > -1;
+      // Update CEO bio card avatar if this is the CEO and has an image
+      if (isCeo && m.image_url) {
+        var ceoBio = document.getElementById('ceoBioAvatar');
+        if (ceoBio) ceoBio.innerHTML = '<img src="' + esc(m.image_url) + '" alt="' + esc(m.name) + '">';
+      }
       var hasImg = m.image_url ? true : false;
       html += '<div class="team-card' + (isCeo ? ' ceo' : '') + '"'
             + (hasImg ? ' data-img-idx="' + imgItems.findIndex(function(x) { return x.title === m.name; }) + '" style="cursor:zoom-in;"' : '')
